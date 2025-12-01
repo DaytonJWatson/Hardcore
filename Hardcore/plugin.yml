@@ -1,0 +1,9 @@
+name: SimplyHardcore
+author: DaytonJWatson
+description: 'Hardcore Minecraft made simple'
+version: 0.0.1
+api-version: '1.21'
+main: com.daytonjwatson.simplyhardcore.SimplyHardcorePlugin
+commands:
+  help:
+  rules:
