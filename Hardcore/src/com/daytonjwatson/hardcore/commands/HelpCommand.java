@@ -27,10 +27,14 @@ public class HelpCommand implements CommandExecutor {
 
         sender.sendMessage("");
         sender.sendMessage(ChatColor.GOLD + "" + ChatColor.BOLD + "Useful Commands:");
+        sender.sendMessage(ChatColor.RED + "/guide "
+                + ChatColor.GRAY + "- Show guide to Bandits and Heros");
         sender.sendMessage(ChatColor.RED + "/help "
                 + ChatColor.GRAY + "- Show this help menu");
         sender.sendMessage(ChatColor.RED + "/rules "
                 + ChatColor.GRAY + "- View hardcore server rules");
+        sender.sendMessage(ChatColor.RED + "/stats "
+                + ChatColor.GRAY + "- View your player stats");
 
         sender.sendMessage("");
         sender.sendMessage(ChatColor.DARK_RED + "" + ChatColor.BOLD + "Play cautiously.");

@@ -11,13 +11,6 @@ public class RulesCommand implements CommandExecutor {
 
         sender.sendMessage(ChatColor.DARK_RED + "" + ChatColor.BOLD + "========== SERVER RULES ==========");
 
-        sender.sendMessage(ChatColor.RED + "" + ChatColor.BOLD + "Hardcore Environment:");
-        sender.sendMessage(ChatColor.GRAY + "• This is a one-life server.");
-        sender.sendMessage(ChatColor.GRAY + "• If you die, you are "
-                + ChatColor.DARK_RED + "" + ChatColor.BOLD + "PERMANENTLY BANNED" 
-                + ChatColor.GRAY + ".");
-        sender.sendMessage("");
-
         sender.sendMessage(ChatColor.GOLD + "" + ChatColor.BOLD + "Gameplay Rules:");
         sender.sendMessage(ChatColor.GRAY + "• PvP & Griefing is allowed but "
                 + ChatColor.RED + "strongly frowned upon" 
@@ -32,10 +25,6 @@ public class RulesCommand implements CommandExecutor {
         sender.sendMessage(ChatColor.GRAY + "• No spam or harassment in chat.");
         sender.sendMessage(ChatColor.GRAY + "• Respect other players—even if PvP is allowed.");
         sender.sendMessage("");
-
-        sender.sendMessage(ChatColor.DARK_RED + "" + ChatColor.BOLD + "Play smart.");
-        sender.sendMessage(ChatColor.DARK_RED + "" + ChatColor.BOLD + "Trust nobody.");
-        sender.sendMessage(ChatColor.DARK_RED + "" + ChatColor.BOLD + "You only get one life.");
 
         return true;
     }

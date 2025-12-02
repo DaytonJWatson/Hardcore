@@ -16,6 +16,7 @@ public class PlayerJoinListener implements Listener {
 	@EventHandler
 	public void onPlayerJoin(PlayerJoinEvent event) {
 		Player player = event.getPlayer();
+		StatsManager stats = StatsManager.get();
 		
 		if(player.hasPlayedBefore())
 			existingPlayer(player, event);
@@ -36,7 +37,8 @@ public class PlayerJoinListener implements Listener {
                 ChatColor.DARK_RED + "" + ChatColor.BOLD + "You only get one life."
         );
 		
-		StatsManager.get().handleJoin(event.getPlayer());
+		stats.handleJoin(player);
+        
 		TabUtil.updateTabForAll();
 	}
 	
